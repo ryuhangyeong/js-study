@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>구구단</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../../../lib/bootstrap/css/bootstrap.min.css">
+  	<style>
+  		.container {
+  			width: 400px;
+  			margin: 50px auto;
+  			text-align: center;
+  		}
+
+  		h1:nth-of-type(2) { margin-bottom: 50px; }
+  		ul { list-style: none; }
+  		[class*="col-"] { padding: 0; }
+  	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>구구단을 하자!</h1>
+		<h1>구구단을 하자!</h1>
+		<form>
+			<div class="form-group row">
+				<div class="col-xs-8">
+					<input type="text" name="dan" class="form-control" placeholder="단수 입력" pattern="[2-9]" required>
+				</div>
+				<div class="col-xs-2">
+					<button type="submit" class="btn btn-primary">출력</button>
+				</div>
+				<div class="col-xs-2">
+					<button type="reset" class="btn btn-danger">초기화</button>
+				</div>
+			</div>
+		</form>
+		<ul class="list-group" id="template"></ul>
+	</div>
+	<script src="../../../lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>
