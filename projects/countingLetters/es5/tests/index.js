@@ -5,6 +5,12 @@ QUnit.module('Count', {
 	}
 });
 
+QUnit.test('init', function (assert) {
+	assert.ok(!$.element().$input().is(':focus'), 'focus 비활성화');
+	$.init();
+	assert.ok($.element().$input().is(':focus'), 'focus 활성화');
+});
+
 QUnit.test('countingView', function (assert) {
 	var str;
 
