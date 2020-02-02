@@ -48,7 +48,7 @@ $(function () {
 	}
 
 	/*
-	 * @return {object}
+	 * @return {$}
 	 */
 	function element() {
 		return {
