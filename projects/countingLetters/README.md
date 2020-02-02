@@ -48,9 +48,3 @@
 
 - [미리보기](https://ryuhangyeong.github.io/js-study/projects/countingLetters/es5/)
 - [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/countingLetters/es5/tests/)
-
-
-## ES6
-
-- [미리보기](https://ryuhangyeong.github.io/js-study/projects/countingLetters/es6/dist/)
-- [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/countingLetters/es6/dist/tests)

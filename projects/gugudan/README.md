@@ -125,8 +125,3 @@ function templateUnitTest(callback) {
 
 - [미리보기](https://ryuhangyeong.github.io/js-study/projects/gugudan/es5/)
 - [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/gugudan/es5/tests/)
-
-## ES6
-
-- [미리보기](https://ryuhangyeong.github.io/js-study/projects/gugudan/es6/dist/)
-- [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/gugudan/es6/dist/test)
