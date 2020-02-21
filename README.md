@@ -69,3 +69,26 @@
   - 스터디 일정 공유
   - 스터디 내용 공유
   - 공부한 내용 정리
+
+## 프로젝트 목록
+
+### 글자수 세기
+
+![글자수 세기 미리보기 이미지](https://user-images.githubusercontent.com/27342882/71428408-fb234800-2703-11ea-9c05-62fbb19db718.PNG)
+
+- [미리보기](https://ryuhangyeong.github.io/js-study/projects/countingLetters/es5/)
+- [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/countingLetters/es5/tests/)
+
+### 구구단
+
+![gugudan](https://user-images.githubusercontent.com/27342882/72396238-60a4aa80-377f-11ea-9d65-27562f497e39.PNG)
+
+- [미리보기](https://ryuhangyeong.github.io/js-study/projects/gugudan/es5/)
+- [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/gugudan/es5/tests/)
+
+### 간이 계산기
+
+![calculator](https://user-images.githubusercontent.com/27342882/75002864-3db99480-54a9-11ea-92b6-c5783bfb5778.PNG)
+
+- [미리보기](https://ryuhangyeong.github.io/js-study/projects/calculator/es5/)
+- [테스트 코드](https://ryuhangyeong.github.io/js-study/projects/calculator/es5/tests/)
