@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>계산기</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../../../lib/bootstrap/css/bootstrap.min.css">
+  	<style>
+  		.container {
+  			width: 400px;
+  			margin: 50px auto;
+  			text-align: center;
+  		}
+
+  		[class*="col-"] { padding: 5px; }
+  	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>간이 계산기</h1>
+		<form>
+			<div class="form-group row">
+				<div class="col-xs-3">
+					<input type="text" name="num1" class="form-control" placeholder="정수" pattern="[0-9]{1,4}" required>
+				</div>
+				<div class="col-xs-3">
+					<select class="form-control" id="arithmetic">
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+					</select>
+				</div>
+				<div class="col-xs-3">
+					<input type="text" name="num2" class="form-control" placeholder="정수" pattern="[0-9]{1,4}" required>
+				</div>
+				<div class="col-xs-3">
+					<button type="submit" class="btn btn-primary">계산</button>
+				</div>
+			</div>
+		</form>
+		<h2 id="result"></h2>
+	</div>
+	<script src="../../../lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>
