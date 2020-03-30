@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>테스트</title>
+	<link rel="stylesheet" href="../lib/qunit/qunit-2.9.2.min.css">
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+		<form>
+			<div class="form-group row">
+				<div class="col-xs-8">
+					<input type="text" name="dan" class="form-control" placeholder="단수 입력" pattern="[2-9]" required>
+				</div>
+				<div class="col-xs-2">
+					<button type="submit" class="btn btn-primary">출력</button>
+				</div>
+				<div class="col-xs-2">
+					<button type="reset" class="btn btn-danger">초기화</button>
+				</div>
+			</div>
+		</form>
+		<ul class="list-group" id="template"></ul>
+	</div>
+	<script src="../lib/qunit/qunit-2.9.2.min.js"></script>
+	<script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="../js/gugudan.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

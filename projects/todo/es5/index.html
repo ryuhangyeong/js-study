@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>할일 관리</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  	<style>
+  		#add { margin-top: 20px; }
+  		#result li { overflow: hidden; }
+  		#result span.active { text-decoration:line-through }
+
+  		@media screen and (max-width: 980px) {
+  			#result button {
+  				float: none!important;
+  				display: block;
+  				margin-top: 10px;
+  			}
+  		}
+  	</style>
+</head>
+<body>
+	<div class="container">
+	    <div class="row">
+	        <form class="col-xs-12">
+	            <h1>Todos</h1>
+                <input type="text" name="todo" class="form-control" placeholder="해야할 일" required>
+                <input type="submit" class="btn btn-success" id="add" value="추가">
+                <hr>
+                <ul class="list-group" id="result"></ul>
+	        </form>
+	    </div>
+	    <div class="alert alert-danger">할 일 목록이 비어있습니다!</div>
+	</div>
+	<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="js/todo.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

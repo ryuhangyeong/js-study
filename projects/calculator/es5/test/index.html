@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>계산기</title>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-  	<style>
-  		.container {
-  			width: 400px;
-  			margin: 50px auto;
-  			text-align: center;
-  		}
-
-  		[class*="col-"] { padding: 5px; }
-  	</style>
+	<meta name="viewport" content="width=device-width">
+	<title>테스트</title>
+	<link rel="stylesheet" href="../lib/qunit/qunit-2.9.2.min.css">
 </head>
 <body>
-	<div class="container">
-		<h1>간이 계산기</h1>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
 		<form>
 			<div class="form-group row">
 				<div class="col-xs-3">
@@ -41,8 +32,9 @@
 		</form>
 		<h2 id="result"></h2>
 	</div>
-	<script src="lib/jquery/jquery-3.4.1.min.js"></script>
-	<script src="js/calculator.js"></script>
-	<script src="js/index.js"></script>
+	<script src="../lib/qunit/qunit-2.9.2.min.js"></script>
+	<script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="../js/calculator.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>테스트</title>
+	<link rel="stylesheet" href="../lib/qunit/qunit-2.9.2.min.css">
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+		<div class="container">
+			<h1>회문 검사기</h1>
+			<form>
+				<div class="row">
+					<div class="col-xs-9">
+						<input type="text" name="num" class="form-control" placeholder="내용을 입력해주세요" required>
+					</div>
+					<div class="col-xs-3">
+						<button type="submit" class="btn btn-primary">검사</button>
+					</div>
+				</div>
+			</form>
+			<h2 id="result"></h2>
+		</div>
+	</div>
+	<script src="../lib/qunit/qunit-2.9.2.min.js"></script>
+	<script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="../js/palindrome.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

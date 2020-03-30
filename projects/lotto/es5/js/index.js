@@ -1,0 +1,3 @@
+$(function () {
+	new $.Lotto().init();
+});

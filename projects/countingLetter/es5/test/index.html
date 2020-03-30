@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>테스트</title>
+	<link rel="stylesheet" href="../lib/qunit/qunit-2.9.2.min.css">
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+		<form>
+			<div class="form-group">
+				<label for="input">글자 수 세기</label>
+				<textarea class="form-control rounded-0" id="input" rows="10"></textarea>
+			</div>
+			<div class="row controls">
+				<div class="col-xs-6">
+					공백포함 <span class="badge" id="include">0</span>
+				</div>
+				<div class="col-xs-6">
+					공백제외 <span class="badge" id="except">0</span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="../lib/qunit/qunit-2.9.2.min.js"></script>
+	<script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="../js/countingLetter.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

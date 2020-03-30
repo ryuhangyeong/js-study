@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>회문 검사기</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  	<style>
+  		.container {
+  			width: 400px;
+  			margin: 50px auto;
+  			text-align: center;
+  		}
+
+  		h1 { margin-bottom: 50px; }
+  		[class*="col-"] { padding: 0; }
+  	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>회문 검사기</h1>
+		<form>
+			<div class="row">
+				<div class="col-xs-9">
+					<input type="text" name="num" class="form-control" placeholder="내용을 입력해주세요" required>
+				</div>
+				<div class="col-xs-3">
+					<button type="submit" class="btn btn-primary">검사</button>
+				</div>
+			</div>
+		</form>
+		<h2 id="result">회문입니다!</h2>
+	</div>
+	<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="js/palindrome.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>로또 번호 추출기</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  	<style>
+  		body, button, ul {
+  			padding: 0;
+  			margin: 0;
+  		}
+
+  		button { border: none; }
+  		ul { list-style: none; }
+
+  		.number__list {
+  			overflow: hidden;
+  			width: 540px;
+  			margin: -5px;
+  		}
+
+  		.number__item {
+            float: left; 
+            width: 50px; 
+            height: 50px;
+            background-color: #ddd;
+            margin: 5px; 
+        }
+
+        .number__item--active {
+            font-weight: bold;
+            color: #fff;
+            background-color: red;
+        }
+
+  		.result__list {
+  			margin-top: 25px;
+  		}
+
+        @media screen and (max-width: 992px) {
+            .btn {
+                margin-top: 20px;
+            }
+        }
+  	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>로또 번호 추출기</h1>
+		<div class="row">
+			<div class="col-xs-12 col-md-8">
+				<h2>제외 숫자를 눌러주세요.</h2>
+				<div class="number__list"></div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<button class="btn btn--result">추출하기</button>
+				<ul class="result__list list-group"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/lotto.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
