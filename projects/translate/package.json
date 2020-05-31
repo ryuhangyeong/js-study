@@ -1,0 +1,24 @@
+{
+    "name": "translate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha test/**/*.spec.js",
+        "test:watch": "mocha test/**/*.spec.js -w",
+        "start": "node index.js",
+        "start:dev": "nodemon index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "request": "^2.88.2",
+        "validate": "^5.1.0"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "dotenv": "^8.2.0",
+        "mocha": "^7.1.1"
+    }
+}

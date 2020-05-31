@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>번역</title>
+	<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+	<style>
+		textarea {
+			resize: none;
+		}
+
+		.panel-body {
+			padding: 0;
+		}
+
+		.translate {
+			position: relative;
+		}
+
+		.translate:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.toggle {
+			position: absolute;
+			top: 50%; left: 50%;
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 991px) {
+			.toggle {
+				transform: rotate(90deg);
+			}
+
+			.translate__item:nth-of-type(1) {
+				margin-bottom: 20px;
+			}
+
+			.translate__item:nth-of-type(2) {
+				margin-top: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form class="row">
+			<div class="col-xs-12">
+				<h1>PaPago API</h1>
+			</div>
+			<div class="translate">
+				<div class="col-xs-12 col-md-6 translate__item">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<select class="form-control" name="source"></select>
+						</div>
+						<div class="panel-body">
+							<textarea class="form-control" rows="5" id="comment1"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 translate__item">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<select class="form-control" name="target"></select>
+						</div>
+						<div class="panel-body">
+							<textarea class="form-control" rows="5" id="comment2" disabled></textarea>
+						</div>
+					</div>
+				</div>
+				<span class="toggle" id="toggle__btn">→<br>←</span>
+			</div>
+			<div class="col-xs-12">
+				<button class="btn btn-primary pull-right" id="translate__btn">번역하기</button>
+			</div>
+		</form>
+	</div>
+	<script src="/lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="/js/utils.js"></script>
+	<script src="/js/translate.js"></script>
+	<script src="/js/index.js"></script>
+</body>
+</html>

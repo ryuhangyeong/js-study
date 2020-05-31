@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Papago API 번역기</title>
+	<link rel="stylesheet" href="/lib/qunit/qunit-2.9.2.min.css">
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+		<div class="container">
+			<form class="row">
+				<div class="col-xs-12">
+					<h1>PaPago API</h1>
+				</div>
+				<div class="translate">
+					<div class="col-xs-12 col-md-6 translate__item">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<select class="form-control" name="source"></select>
+							</div>
+							<div class="panel-body">
+								<textarea class="form-control" rows="5" id="comment1"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 translate__item">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<select class="form-control" name="target"></select>
+							</div>
+							<div class="panel-body">
+								<textarea class="form-control" rows="5" id="comment2" disabled></textarea>
+							</div>
+						</div>
+					</div>
+					<span class="toggle" id="toggle__btn">→<br>←</span>
+				</div>
+				<div class="col-xs-12">
+					<button class="btn btn-primary pull-right" id="translate__btn">번역하기</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="/lib/qunit/qunit-2.9.2.min.js"></script>
+	<script src="/lib/jquery/jquery-3.4.1.min.js"></script>
+	<script src="/js/utils.js"></script>
+	<script src="/js/translate.js"></script>
+	<script src="/test/index.js"></script>
+</body>
+</html>
